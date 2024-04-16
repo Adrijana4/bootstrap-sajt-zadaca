@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .navbar-nav .nav-link {
+      color: #888;
+    }
+    .navbar-brand{
+        font-size: 30px;
+        color: #000; 
+    }
+    .navbar-toggler-icon {
+        background-color: #000; 
+        border-color: #000; 
+    }
+    .navbar-nav .nav-link:hover {
+      color: #000;
+    }
+    .hero-container {
+      position: relative;
+    }
+    .hero-overlay {
+        position: absolute;
+        top: 12%;
+        left: 20%;
+        transform: translate(-50%, 50%);
+        max-width: 400px;
+        background-color: #2fa566;
+        padding: 7px;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .col-md-3 {
+    text-align: center;
+    }
+
+    .col-md-3 img {
+    display: block; 
+    margin: 0 auto; 
+    }
+
+    .col-md-3 h3, .col-md-3 p {
+    text-align: center;
+    }
+
+    @media (max-width: 768px) { 
+      .hero-overlay {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-overlay {
+        width: 90%; 
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <h1 class="mb-0 font-weight-medium mb-0" style="font-size: 44px; color: gray;">My Website</h1>
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      Menu
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Staff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Download</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="hero-container d-none d-md-block">
+  <img src="hero.jpg" alt="Hero Image" style="width: 100%; height: auto;">
+</div>
+
+<div class="hero-overlay d-none d-md-block"> 
+  <div class="hero-content">
+    <h1 style="font-size: 16px;">We strive to make all of our creations exquisite</h1>
+  </div>
+</div>
+
+<div class="hero-container d-block d-md-none"> 
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1 style="font-size: 16px;">We strive to make all of our creations exquisite</h1>
+    </div>
+  </div>
+  <img src="hero.jpg" alt=image+0" style="width: 100%; height: auto;">
+</div>
+<div class="container mt-md-4 mt-2">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="icon-1.png" alt="Image 1" class="img-fluid mb-2">
+            <h3>Purpose</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis.</p>
+        </div>
+        <div class="col-md-3">
+            <img src="icon-2.png" alt="Image 2" class="img-fluid mb-2">
+            <h3>Quality</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis.</p>
+        </div>
+        <div class="col-md-3">
+            <img src="icon-1.png" alt="Image 3" class="img-fluid mb-2">
+            <h3>Function</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis.</p>
+        </div>
+        <div class="col-md-3">
+            <img src="icon-4.png" alt="Image 4" class="img-fluid mb-2">
+            <h3>Elegant</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col">
+            <h2 class="font-weight-bold">RECENT WORK</h2>
+            <hr class="my-2" style="border-top: 1px solid #888;">
+        </div>
+    </div>
+</div>
+
+<div class="container mt-md-4 mt-2">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+            <img src="bike-400x340.jpg" alt="Slika 1" class="img-fluid mb-2">
+            <h3>Green Bike</h3>
+            <p class="text-secondary">Beautiful travel</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <img src="surf-400x340.jpg" alt="Slika 2" class="img-fluid mb-2">
+            <h3>Salt Of The Earth</h3>
+            <p class="text-secondary">Beautiful travel</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <img src="hills-400x340.jpg" alt="Slika 3" class="img-fluid mb-2">
+            <h3>Mountain high</h3>
+            <p class="text-secondary">Travel</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <img src="path-400x340.jpg" alt="Slika 4" class="img-fluid mb-2">
+            <h3>When A Three Falls</h3>
+            <p class="text-secondary">Beautiful</p>
+        </div>
+    </div>
+</div>
+<div id="between-section">
+</div>
+<div class="container mt-4 pb-3">
+    <div class="row">
+        <div class="col">
+            <h2 class="font-weight-bold">FROM THE BLOG</h2>
+            <hr class="my-2" style="border-top: 1px solid #888;">
+        </div>
+    </div>
+</div>
+
+<div class="container mt-12">
+    <div class="row">
+        <div class="col-lg-4 col-md-12 col-12">
+            <img src="cow-640x340.jpg" alt="Slika 1" class="img-fluid mb-2">
+            <h3>How Now</h3>
+            <p class="text-secondary">Posted on October 28, 2020</p>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur aperiam perspiciatis dignissimos, Reprehenderit?</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-12">
+            <img src="sunrise-640x340.jpg" alt="Slika 2" class="img-fluid mb-2">
+            <h3>Adrift by Simnon Chrtisten</h3>
+            <p class="text-secondary">Posted on October 28, 2020</p>
+            <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur quam, vel voluptatibus architecto! Corrupti, ea veritatis. Consequuntur debitis laudantium perspiciatis eaque?</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-12">
+            <img src="grass-640x340.jpg" alt="Slika 3" class="img-fluid mb-2">
+            <h3>A Walk In The Park</h3>
+            <p class="text-secondary">Posted on October 28, 2020</p>
+            <p class="text-secondary">Lorem ipsum, vel voluptatibus architecto! Corrupti, ea veritatis. Consequuntur debitis laudantium perspiciatis eaque?</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-5 bg-dark text-white mx-lg-0 px-lg-5 py-lg-4">
+    <div class="row">
+        <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="font-weight-bold pb-4">My Website</h4>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deleniti omnis voluptates explicabo pariatur in et minus odit sequi accusamus. Animi voluptatibus neque tempora expedita quas vero ratione temporibus ipsa.</p>
+        </div>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="font-weight-bold pb-4">Recent Posts</h4>
+            <hr class="my-2 bg-white">
+            <p>How Now</p>
+            <hr class="my-2 bg-white">
+            <p>Adrift by Simnon Chrtisten</p>
+            <hr class="my-2 bg-white">
+            <p>A Walk In The Park</p>
+            <hr class="my-2 bg-white">
+            <p>Time To Think</p>
+            <hr class="my-2 bg-white">
+            <p>Field Of Dreams</p>
+            <hr class="my-2 bg-white">
+        </div>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="font-weight-bold pb-4">Recent Works</h4>
+            <hr class="my-2 bg-white">
+            <p>Beautiful</p>
+            <hr class="my-2 bg-white">
+            <p>Travel</p>
+            <hr class="my-2 bg-white">
+            <p>Surreal</p>
+            <hr class="my-2 bg-white">
+            <p>Thoughts</p>
+            <hr class="my-2 bg-white">
+            <p>Podnaslov</p>
+            <hr class="my-2 bg-white">
+        </div>
+    </div>
+</div>
+
+<footer class="text-white text-center py-4"  style="background-color: black;">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-auto">
+                <p class="m-0">© 2020 ITAcademy</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="fotter-two">
+  <div id="div-one">
+    <h1 id="properties">
+  </div>
+</div>
+</body>
+</html>
